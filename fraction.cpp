@@ -1,25 +1,23 @@
 //fraction.cpp
-
 #include "fraction.h"
-
 //
 //public areas
 //
 
-fraction::fraction(int n, int d) 
+fraction::fraction(int n, int d)
 {
 	if (d == 0)
 		{
 			fprintf(stderr, "Denominator of zero is undefined. Please try again.");
 			exit
-		} 
-	else if (d < 0) 
+		}
+	else if (d < 0)
 		{
 			//accounts for negatives
 			num = -n;
 			den = -d;
-		} 
-	else 
+		}
+	else
 		{
 			num = n;
 			den = d;
@@ -170,7 +168,7 @@ void fraction::display()
 
 
 //private spots :O
-		
+
 int fraction::getgcd(int n, int d)
 {
 	if (d > n)
@@ -179,7 +177,7 @@ int fraction::getgcd(int n, int d)
 		n = d;
 		d = temp;
 	}
-	
+
 	int x;
 	while(d != 0)
 	{
