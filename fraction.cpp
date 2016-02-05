@@ -1,13 +1,8 @@
 //fraction.cpp
-
 #include "fraction.h"
-
 //
-
 //public areas
-
 //
-
 
 fraction::fraction(int n, int d)
 {
